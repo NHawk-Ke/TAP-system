@@ -1,0 +1,84 @@
+{
+  "interface": null,
+  "protocols": {
+    "ARP": {
+      "htype": {"display": true},
+      "ptype": {"display": true},
+      "hlen": {"display": true},
+      "plen": {"display": true},
+      "operation": {"display": true},
+      "sha": {"display": true},
+      "spa": {"display": true},
+      "tha": {"display": true},
+      "tpa": {"display": true}
+    },
+    "Ethernet": {
+      "mac_dst": {"display": false},
+      "mac_src": {"display": false},
+      "eth_type": {"display": false}
+    },
+    "ICMP": {
+      "type": {"display": true},
+      "code": {"display": true},
+      "checksum": {"display": true}
+    },
+    "IGMP": {
+      "type": {"display": true},
+      "max_res_time": {"display": true},
+      "checksum": {"display": true},
+      "grp_addr": {"display": true}
+    },
+    "IPv4": {
+      "version": {"display": false},
+      "ihl": {"display": false},
+      "dscp": {"display": false},
+      "ecn": {"display": false},
+      "tot_len": {"display": false},
+      "id": {"display": false},
+      "flags": {"display": false},
+      "offset": {"display": false},
+      "ttl": {"display": false},
+      "proto": {"display": false},
+      "checksum": {"display": false},
+      "src": {
+        "display": true,
+        "startswith": "10"
+      },
+      "dst": {"display": true}
+    },
+    "IPv6": {
+      "version": {"display": true},
+      "tclass": {"display": true},
+      "flabel": {"display": true},
+      "payload_len": {"display": true},
+      "next_header": {"display": true},
+      "hop_limit": {"display": true},
+      "src": {"display": true},
+      "dst": {"display": true}
+    },
+    "TCP": {
+      "sport": {
+        "display": true
+      },
+      "dport": {"display": true},
+      "seq": {"display": false},
+      "ack": {"display": false},
+      "flags": {"display": false},
+      "window": {"display": false},
+      "checksum": {"display": false},
+      "urg": {"display": false}
+    },
+    "UDP": {
+      "sport": {"display": true},
+      "dport": {"display": true},
+      "checksum": {"display": true}
+    }
+  },
+  "display_data": false,
+  "BPF": null,
+  "publish": {
+    "broker": "142.150.208.235",
+    "port": 1883,
+    "topic": "packet/info"
+  }
+}
